@@ -8,11 +8,6 @@ header{
     justify-content: space-evenly;
     background-color: #1F242D;
 }
-img{
-    width: 20%;
-    height: 70%;
-    
-}
 .Logo{
     display: flex;
     flex-direction: row;
