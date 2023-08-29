@@ -1,18 +1,22 @@
 
 import './App.css'
 import React from 'react';
-import Header from './components/Header/header';
-import {Section} from "../src/components/section/Section";
-import { Footer } from "./components/Footer/Footer";
+import { Routes,Route } from 'react-router-dom';
+import { Home } from './components/Home/Home';
+import  About   from './components/About/About';
+import Header from './components/Header/Header'
 
 
 function App() {
 
   return (
     <>
-      <Header/>
-      <Section/>
-      <Footer/>
+    <Header/>
+      <Routes>
+        <Route path='/' Component={Home}></Route>
+        <Route path='/About' Component={About}></Route>
+        {/* <Route path='/Contact' element={<Contact/>}></Route> */}
+      </Routes>
     </>
   )
 }

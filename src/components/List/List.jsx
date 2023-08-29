@@ -1,7 +1,7 @@
 import './List.css'
-export const List = ({name}) => {
+export const List = ({name,path}) => {
   return (
-    <li><a href="" className={name}>{name}</a></li>
+    <li><a href={path} className={name}>{name}</a></li>
   )
 }
 
