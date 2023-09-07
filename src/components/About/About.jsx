@@ -4,6 +4,7 @@ const img ='../../public/images/bleux.png'
 const img2 ='../../public/images/blueasy.png'
 const img3 ='../../public/images/gifs.png'
 
+
 export default function About () {
     const abrirProyect1 = ()=>{
             window.open('https://paginafalla.netlify.app')
@@ -41,6 +42,8 @@ export default function About () {
             </div>
 
         </section>
+       
+
         
     )
 
