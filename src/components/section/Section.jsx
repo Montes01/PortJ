@@ -4,6 +4,10 @@ export const Section = () => {
     window.open('https://www.facebook.com/jhonwilmar.ortiz.7?mibextid=LQQJ4d', '_blank');
   };
 
+  const abrirInstagram = ()=>{
+    window.open('https://instagram.com/jhon__w7')
+  };
+
   return (
     <section>
         <div className="box1">
@@ -13,11 +17,8 @@ export const Section = () => {
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, facilis. Vel eveniet alias magni eum magnam perspiciatis officia incidunt, deserunt earum, a, dolorum libero </p>
         <div className='images'>
           <img className='img1' onClick={abrirFacebook} src="https://cdn-icons-png.flaticon.com/128/2168/2168281.png" alt="" />
-          <img className='img2' src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="" />
-          <img className='img3' src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="" />
-          <img className='img4' src="https://cdn-icons-png.flaticon.com/128/61/61109.png" alt="" />
+          <img className='img3' onClick={abrirInstagram} src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="" />
         </div>
-        <button className='buttonD'>Download CV</button>
         </div>
 
         <div className="box2">
