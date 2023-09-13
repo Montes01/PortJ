@@ -1,0 +1,152 @@
+ .contact{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: 20% 80%;
+    height: 80vh;
+    color: white;
+}
+.containerInfo{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.containerInfo h1{
+    font-size: 40px;
+    margin-top: 0;
+    Font-family: Trebuchet MS;
+
+}
+hr{
+    margin-top: 0;
+    width: 33%;
+    margin-inline-start: 0;
+    border-color: aqua;
+    border-width: 1px;
+    
+}
+.containerInfo p{
+    Font-family: Century Gothic;
+    font-size: 24px;
+}
+.containerFormu{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    position: relative;
+    width: 380px;
+    height: 420px;  
+    overflow: hidden;
+    border-radius: 8px;
+    Font-family: Century Gothic;
+
+}
+
+.containerFormu::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,#45f3ff,#45f3ff );
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite; 
+    animation-delay: -3s;   
+}
+.containerFormu::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,#45f3ff,#45f3ff );
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite; 
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #1F242D;
+    z-index: 10;
+    padding: 1px ;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 14px;
+}
+
+.labelNombre{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.hrFormulario{
+    width: 23%;
+}
+.hrCorreo{
+    width: 20%;
+
+}
+#nombre{
+    width: 80%;
+    margin-bottom: 25px;
+    height: 23px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 16px 14px 20px black;
+
+}
+.labelCorreo{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#correo{
+    width: 80%;
+    margin-bottom: 25px;
+    height: 23px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 16px 14px 20px black;
+
+}
+.labelMensaje{
+    font-size: 20px;
+    margin-bottom: 5px;   
+}
+#mensaje{
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 16px 14px 20px black;
+    width: 80%;
+
+}
+.send{
+    
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    Font-family: Trebuchet MS;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 16px 14px 20px black;
+
+}
+
+.send:hover{
+    background-color: rgb(17, 156, 220);
+}
+
+
+
+

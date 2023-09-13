@@ -2,12 +2,12 @@ body{
     margin: 0;
     padding: 0;
 }
-section{
+.sectionInicio{
     background-color: #1F242D;
     display: grid;
     grid-template-columns: 10% 40% 50%;
     grid-template-rows: 20% 80%;
-    height: 80vh;
+    height: 80vh;   
     color: white;
 }
 .box2{
@@ -26,11 +26,19 @@ h2{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 30px;
+    Font-family: Century Gothic;
+
 }
 .box1 h1{
     margin-top: 0;
     margin-bottom: 0;
+    Font-family: Century Gothic;
     font-size: 45px;
+}
+.box1 p{
+    font-size: 21px;
+    line-height: 120%;
+    Font-family: Century Gothic;
 }
 .images {
     display: grid;
