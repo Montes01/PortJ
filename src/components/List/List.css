@@ -9,8 +9,12 @@ li a{
     font-size: 20px;
     text-decoration: none;
     color:gray ;
-
+    padding: 1%;
+    border: 3px solid rgb(0,0,0,0) ;
 }
-.Home{
+ li a:hover{
     color: aqua;
-}
+    border: aqua solid 3px;
+
+ }
+

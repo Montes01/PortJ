@@ -1,23 +1,10 @@
 footer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 10%; 
-    color: gray;
+    justify-content: center;
+    color: rgb(182, 173, 173);
     background-color: #323946;
     height: 10vh;
-}
-.arrow{
-    background-color: aqua;
-    border: none;
-    border-radius: 10px;
-    width: 3%;
-    cursor: pointer;
-}
-.arrow :hover{
-    box-shadow: 0px 0px 10px 5px aqua;
+    Font-family: Century Gothic;
 
-}
-button img{
-    width: 100%;
 }

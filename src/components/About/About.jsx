@@ -18,25 +18,34 @@ export default function About () {
     }
     return(
         <section className='sectionAbout'>
-            <p>¡Hola! Soy Jhon Wilmar Rueda, un desarrollador web apasionado con experiencia en (html, css, bases de datos, javascript y react) el cual le gusta la programacion, el deporte y ser barbero. Estoy aquí para ayudarte a crear soluciones web increíbles. Puedes contactarme en (jhonwilmar638@gmail.com). ¡Gracias por visitar mi página!</p>
+         <h4>  <font color="aqua" >¡Hola!</font> Soy Jhon Wilmar Rueda, un desarrollador web apasionado con experiencia en (html, css, bases de datos, javascript y react) el cual le gusta la programacion, el deporte y ser barbero. Estoy aquí para ayudarte a crear soluciones web increíbles. Puedes contactarme en (jhonwilmar638@gmail.com). ¡Gracias por visitar mi página! </h4>
             <div className="containerProyects">
-            <h2>Proyectos</h2>
+            <h2>Proyectos
+                <hr className='hrProyect'/>
+            </h2>
                 <div className="proyect1">
-                    <h3>BLEUX</h3>
+                    <h3>BLEUX
+                        <hr className="hrProyect1" />
+                    </h3>
                     <img onClick={abrirProyect1} src={img} alt="" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, possimus similique. Enim et doloremque nisi est, accusantium quam veritatis obcaecati velit a, vero officiis aliquid ipsam itaque mollitia minima laboriosam.</p>
+                    <p>Esta página se centra en promocionar un producto o servicio, destacando sus características y opciones de precios. La información proporcionada es de relleno ("Lorem ipsum"), pero la estructura general de la página sugiere su propósito de promoción y ventas.</p>
                 </div>
 
                 <div className="proyect2">
-                    <h3>BLUEASY</h3>
+                    <h3>BLUEASY
+                    <hr className="hrProyect2" />
+                    </h3>
                     <img onClick={abrirProyect2} src={img2} alt="" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, possimus similique. Enim et doloremque nisi est, accusantium quam veritatis obcaecati velit a, vero officiis aliquid ipsam itaque mollitia minima laboriosam.</p>
+                    <p>la página web "blueasy" es un sitio multipropósito con secciones que presentan información sobre servicios, un portafolio de imágenes, información de contacto y testimonios. Sin embargo, el contenido actual es principalmente de relleno.</p>
                 </div>
 
                 <div className="proyect3">
-                    <h3>GIFS</h3>
+                    <h3>GIFS
+                    <hr className="hrProyect3" />
+
+                    </h3>
                     <img onClick={abrirProyect3} src={img3} alt="" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, possimus similique. Enim et doloremque nisi est, accusantium quam veritatis obcaecati velit a, vero officiis aliquid ipsam itaque mollitia minima laboriosam.</p>
+                    <p>esta página llamada "Gifs" permite a los usuarios buscar y ver GIFs, mostrando tanto GIFs tendencia como resultados de búsqueda en dos secciones separadas. </p>
                 </div>
 
             </div>
