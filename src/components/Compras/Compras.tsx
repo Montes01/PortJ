@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './Compras.css'
+import { Context, ContextProvider } from '../../Contexts/ContextoCarrito';
 
 async function getProduct() {
   const response = await fetch('https://fakestoreapi.com/products');
@@ -8,7 +9,7 @@ async function getProduct() {
 }
 
 export const Compras = () => {
-  const [productos, setProductos] = useState([]);
+  const [productos, setProductos] = useState(new Array<{}>);
   const [carrito, setCarrito] = useState([]);
 
   useEffect(() => {
@@ -19,29 +20,34 @@ export const Compras = () => {
 
     fetchProducts();
   }, []);
+  const context = useContext(Context);
+const addProductToCart = () => {
+  context.setCounter(context.counter + 1);
+}
 
-  const agregarAlCarrito = (producto) => {
-    setCarrito([...carrito, producto]);
-  };
+
 
   return (
-    <section className='Shop'>
-      <div className='Carrito'>
-        <h2>Carrito de Compras</h2>
-        <ul>
-          {carrito.map((item, index) => (
-            <li key={index}>{item.title}</li>
-          ))}
-        </ul>
-      </div>
-      {productos.map((el, index) => (
-        <div className='Products' key={index}>
-          <h1>{el.title}</h1>
-          <img src={el.image} alt="" />
-          <p>{el.description}</p>
-          <button onClick={() => agregarAlCarrito(el)}>Agregar al carrito</button>
-        </div>
-      ))}
-    </section>
+    <ContextProvider>
+
+      <section className='Shop'>
+
+        {productos.map((el, index) => (
+          <div className='Products' key={index}>
+            <h1>{el.title}</h1>
+            <img src={el.image} alt="" />
+            <div>
+              <p>{el.description}</p>
+            </div>
+            <button onClick={addProductToCart}>Agregar al carrito</button>
+          </div>
+        ))}
+
+        <section className='carrito'>
+          <span>{context.counter}</span>
+          <img src="/public/images/carrito.png" className='imagenCarrito' alt="" />
+        </section>
+      </section>
+    </ContextProvider>
   );
 };

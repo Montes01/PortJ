@@ -1,0 +1,56 @@
+.Products {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: linear-gradient(90deg , #000 , #346     );
+    border-radius: 10%;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    color: white;
+    & img {
+        height: 40%;
+        object-fit: cover;
+        object-position: top;
+    }
+    & div {
+        overflow-y: scroll; 
+        margin: 2px;
+    }
+    & div::-webkit-scrollbar {
+        width: 0;
+    }
+    & button {
+        padding: 5px;
+        background-color: black;
+        border-radius: 15px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+.Shop {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.carrito {
+    position: fixed;
+    font: 900;
+    left: 15px;
+    top: 15px;
+    color: wheat;
+    & .imagenCarrito {
+        object-fit:contain ;
+        object-position: center;
+        width: 30px;
+        border-radius: none;
+        border: 0px transparent;
+    }
+}
